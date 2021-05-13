@@ -11,9 +11,8 @@ if empty(v:servername) && exists('*remote_startserver')
 endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
-"Plug 'jiangmiao/auto-pairs'
-Plug 'francoiscabrol/ranger.vim'
-Plug 'rbgrouleff/bclose.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'junegunn/goyo.vim'
 Plug 'jreybert/vimagit'
 Plug 'vimwiki/vimwiki'
@@ -78,6 +77,9 @@ set formatoptions=jtq
 let NERDTreeShowLineNumbers=1
 
 source $HOME/.config/nvim/mom.vim
+let g:rnvimr_ex_enable = 1
+
+nmap <leader>r :RnvimrToggle<CR>
 
 hi SpellBad ctermfg=black ctermbg=white
 
