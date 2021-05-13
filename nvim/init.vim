@@ -116,6 +116,8 @@ nmap <F9> :NERDTree <ENTER>
 
 nmap <silent> gf :tabp<ENTER>
 "For the alternative Ranger plugin:
+"let g:ranger_map_keys = 0
+"let g:ranger_replace_netrw = 1
 "nmap <silent> <leader>r :Ranger<ENTER>
 
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
