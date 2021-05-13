@@ -12,7 +12,13 @@ endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
 Plug 'jiangmiao/auto-pairs'
+
+"Ranger plugins
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+"Alternate ranger plugin (The one above doesn't work on Mac)
+"Plug 'francoiscabrol/ranger.vim'
+"Plug 'rbgrouleff/bclose.vim'
+
 Plug 'junegunn/goyo.vim'
 Plug 'jreybert/vimagit'
 Plug 'vimwiki/vimwiki'
