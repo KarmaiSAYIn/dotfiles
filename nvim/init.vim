@@ -115,5 +115,7 @@ nmap <F7> :w <bar> !g++ -o a.out % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c+
 nmap <F9> :NERDTree <ENTER>
 
 nmap <silent> gf :tabp<ENTER>
+"For the alternative Ranger plugin:
+"nmap <silent> <leader>r :Ranger<ENTER>
 
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
