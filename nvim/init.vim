@@ -104,6 +104,6 @@ nmap <F7> :w <bar> !g++ -o a.out % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c+
 nmap <F9> :NERDTree <ENTER>
 
 nmap <silent> gf :tabp<ENTER>
-nmap gh :CocCommand clangd.switchSourceHeader<ENTER>
+nmap <leader>n :NERDTree
 
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
