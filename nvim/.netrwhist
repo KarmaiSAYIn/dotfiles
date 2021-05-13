@@ -1,10 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/ladmin/courses'
+let g:netrw_dirhist_1='/Users/ladmin/courses/NM_History/The Zimmerman Telegram'
+let g:netrw_dirhist_0='/Users/ladmin/courses/NM_History'
+let g:netrw_dirhist_9='/Users/ladmin/courses'
 let g:netrw_dirhist_8='/home/jonah/courses/English_I'
 let g:netrw_dirhist_7='/home/jonah/.local/src/dwmblocks'
 let g:netrw_dirhist_6='/etc'
 let g:netrw_dirhist_5='/home/jonah/.local/share/Steam/steam'
 let g:netrw_dirhist_4='/home/jonah/.config/mpv/scripts/playlistmanager'
 let g:netrw_dirhist_3='/home/jonah/.local/src'
-let g:netrw_dirhist_2='/home/jonah/.local/src/dwm'
-let g:netrw_dirhist_1='/etc/X11/xorg.conf.d'
