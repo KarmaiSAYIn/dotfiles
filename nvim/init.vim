@@ -11,10 +11,11 @@ if empty(v:servername) && exists('*remote_startserver')
 endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
-Plug 'jiangmiao/auto-pairs'
+Plug 'voldikss/vim-floaterm'
+Plug 'ptzz/lf.vim'
 
 "Ranger plugins
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+"Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 "Alternate ranger plugin (The one above doesn't work on Mac)
 "Plug 'francoiscabrol/ranger.vim'
 "Plug 'rbgrouleff/bclose.vim'
@@ -83,7 +84,7 @@ set formatoptions=jtq
 let NERDTreeShowLineNumbers=1
 
 source $HOME/.config/nvim/mom.vim
-let g:rnvimr_ex_enable = 1
+let g:lf_replace_netrw = 1
 
 nmap <leader>r :RnvimrToggle<CR>
 
@@ -115,9 +116,5 @@ nmap <F7> :w <bar> !g++ -o a.out % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c+
 nmap <F9> :NERDTree <ENTER>
 
 nmap <silent> gf :tabp<ENTER>
-"For the alternative Ranger plugin:
-"let g:ranger_map_keys = 0
-"let g:ranger_replace_netrw = 1
-"nmap <silent> <leader>r :Ranger<ENTER>
 
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
