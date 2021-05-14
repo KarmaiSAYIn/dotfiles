@@ -96,8 +96,6 @@ command Maketags !ctags -R .
 command Nonu set nonu | set nornu
 command Nu set nu | set rnu
 command Install write | !sudo make install
-command Colc write | !g++ -o output.o % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c++17
-command Cmom write | !pdfmom % > output.pdf
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -116,5 +114,6 @@ nmap <F7> :w <bar> !g++ -o a.out % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c+
 nmap <F9> :NERDTree <ENTER>
 
 nmap <silent> gf :tabp<ENTER>
+nmap <silent> gh :CocCommand clangd.SwitchSourceHeader<ENTER>
 
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
