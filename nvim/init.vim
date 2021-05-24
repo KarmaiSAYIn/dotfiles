@@ -20,6 +20,7 @@ Plug 'ptzz/lf.vim'
 "Plug 'francoiscabrol/ranger.vim'
 "Plug 'rbgrouleff/bclose.vim'
 
+Plug 'tpope/vim-fugitive'
 Plug 'junegunn/goyo.vim'
 Plug 'jreybert/vimagit'
 Plug 'vimwiki/vimwiki'
