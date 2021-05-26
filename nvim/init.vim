@@ -103,7 +103,7 @@ nmap <silent> <C-h> :tabprevious<ENTER>
 nmap <silent> <C-l> :tabnext<ENTER>
 nmap L zL
 nmap H zH
-
+nmap <silent> gh :CocCommand clangd.switchSourceHeader<ENTER>
 nmap <F1> :w !python3 % <ENTER>
 nmap <F2> :w <bar> !pdflatex % <ENTER>
 nmap <F3> :Cmom <ENTER>
