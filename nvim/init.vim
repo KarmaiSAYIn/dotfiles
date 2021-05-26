@@ -82,14 +82,14 @@ set textwidth=0
 set formatoptions-=jcroql
 set formatoptions=jtq
 
-let NERDTreeShowLineNumbers=1
-
 source $HOME/.config/nvim/mom.vim
 let g:lf_replace_netrw = 1
 
 nmap <leader>r :RnvimrToggle<CR>
 
 hi SpellBad ctermfg=black ctermbg=white
+hi DiffChange ctermbg=black
+hi DiffAdd ctermbg=darkgrey
 
 command Fd filetype detect
 command Sck set spell spelllang=en_us
@@ -98,12 +98,11 @@ command Nonu set nonu | set nornu
 command Nu set nu | set rnu
 command Install write | !sudo make install
 
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-map L zL
-map H zH
+nmap <silent> <C-t> :tabnew<ENTER>
+nmap <silent> <C-h> :tabprevious<ENTER>
+nmap <silent> <C-l> :tabnext<ENTER>
+nmap L zL
+nmap H zH
 
 nmap <F1> :w !python3 % <ENTER>
 nmap <F2> :w <bar> !pdflatex % <ENTER>
@@ -112,9 +111,5 @@ nmap <F4> :w <bar> !bash % <ENTER>
 nmap <F5> :w <bar> !gcc % <ENTER>
 nmap <F6> :w <bar> !sudo g++ % `wx-config --cxxflags --libs` -o output.o <ENTER> <bar> ./output.o <ENTER>
 nmap <F7> :w <bar> !g++ -o a.out % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c++17 <ENTER>
-nmap <F9> :NERDTree <ENTER>
-
-nmap <silent> gf :tabp<ENTER>
-nmap <silent> gh :CocCommand clangd.switchSourceHeader<ENTER>
 
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
