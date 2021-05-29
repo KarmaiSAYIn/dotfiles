@@ -90,6 +90,7 @@ nmap <leader>r :RnvimrToggle<CR>
 hi SpellBad ctermfg=black ctermbg=white
 hi DiffChange ctermbg=black
 hi DiffAdd ctermbg=darkgrey
+hi DiffText ctermbg=5
 
 command Fd filetype detect
 command Sck set spell spelllang=en_us
@@ -101,6 +102,11 @@ command Install write | !sudo make install
 nmap <silent> <C-t> :tabnew<ENTER>
 nmap <silent> <C-h> :tabprevious<ENTER>
 nmap <silent> <C-l> :tabnext<ENTER>
+nmap <silent> <Tab>h <C-w>h
+nmap <silent> <Tab>j <C-w>j
+nmap <silent> <Tab>k <C-w>k
+nmap <silent> <Tab>l <C-w>l
+
 nmap L zL
 nmap H zH
 nmap <silent> gh :CocCommand clangd.switchSourceHeader<ENTER>
