@@ -23,6 +23,7 @@ Plug 'preservim/nerdcommenter'
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
+source $HOME/.config/nvim/vimgitlog.vim
 
 set rtp+=~/.vim/bundle/vim-project/
 
@@ -62,6 +63,7 @@ set laststatus=0
 set showtabline=2
 "set noshowmode
 "set nobackup
+"set cursorline
 set updatetime=10
 set timeoutlen=500
 set nowrap
@@ -94,6 +96,10 @@ nmap <silent> <Tab>h <C-w>h
 nmap <silent> <Tab>j <C-w>j
 nmap <silent> <Tab>k <C-w>k
 nmap <silent> <Tab>l <C-w>l
+nmap <silent> <Tab>H <C-w>H
+nmap <silent> <Tab>J <C-w>J
+nmap <silent> <Tab>K <C-w>K
+nmap <silent> <Tab>L <C-w>L
 
 nmap L zL
 nmap H zH
