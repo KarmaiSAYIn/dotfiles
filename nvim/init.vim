@@ -86,7 +86,8 @@ command Fd filetype detect
 command Sck set spell spelllang=en_us
 command Maketags !ctags -R .
 command Nonu set nonu | set nornu
-command Nu set nu | set rnu
+command Rnu set nu | set rnu
+command Nu set nornu
 command Install write | !sudo make install
 
 nmap <silent> <C-t> :tabnew<ENTER>
@@ -100,6 +101,7 @@ nmap <silent> <Tab>H <C-w>H
 nmap <silent> <Tab>J <C-w>J
 nmap <silent> <Tab>K <C-w>K
 nmap <silent> <Tab>L <C-w>L
+nmap <C-c> :close<ENTER>
 
 nmap L zL
 nmap H zH
