@@ -20,6 +20,7 @@ Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'preservim/nerdcommenter'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
@@ -85,13 +86,12 @@ hi DiffText ctermbg=5
 command Fd filetype detect
 command Sck set spell spelllang=en_us
 command Maketags !ctags -R .
-command Nonu set nonu | set nornu
-command Nu set nu | set rnu
-command Install write | !sudo make install
+command Run make <bar> !output
 
 nmap <silent> <C-t> :tabnew<ENTER>
 nmap <silent> <C-h> :tabprevious<ENTER>
 nmap <silent> <C-l> :tabnext<ENTER>
+nmap <silent> <leader>d :tabnew %<ENTER>
 nmap <silent> <Tab>h <C-w>h
 nmap <silent> <Tab>j <C-w>j
 nmap <silent> <Tab>k <C-w>k
@@ -100,6 +100,7 @@ nmap <silent> <Tab>H <C-w>H
 nmap <silent> <Tab>J <C-w>J
 nmap <silent> <Tab>K <C-w>K
 nmap <silent> <Tab>L <C-w>L
+nmap <C-c> :close<ENTER>
 
 nmap L zL
 nmap H zH
