@@ -86,7 +86,14 @@ hi DiffText ctermbg=5
 command Fd filetype detect
 command Sck set spell spelllang=en_us
 command Maketags !ctags -R .
+<<<<<<< HEAD
 command Run make <bar> !output
+=======
+command Nonu set nonu | set nornu
+command Rnu set nu | set rnu
+command Nu set nornu
+command Install write | !sudo make install
+>>>>>>> b10b13a9acdb9f68c7b3227b1fc754774fa32f73
 
 nmap <silent> <C-t> :tabnew<ENTER>
 nmap <silent> <C-h> :tabprevious<ENTER>
