@@ -20,11 +20,11 @@ Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'preservim/nerdcommenter'
-Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/vimgitlog.vim
+source $HOME/.config/nvim/auto-pairs.vim
 
 set rtp+=~/.vim/bundle/vim-project/
 
@@ -86,7 +86,10 @@ hi DiffText ctermbg=5
 command Fd filetype detect
 command Sck set spell spelllang=en_us
 command Maketags !ctags -R .
+command Nu set nornu <bar> set nu
+command Rnu set rnu <bar> set nu
 command Run make <bar> !output
+command Cd cd %:p:h
 
 nmap <silent> <C-t> :tabnew<ENTER>
 nmap <silent> <C-h> :tabprevious<ENTER>
