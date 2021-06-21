@@ -20,7 +20,16 @@ Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'preservim/nerdcommenter'
+
+" Colorschemes
+Plug 'franbach/miramare'
+Plug 'stillwwater/vim-nebula'
+Plug 'relastle/bluewery.vim'
+Plug 'yasukotelin/shirotelin'
+Plug 'balanceiskey/vim-framer-syntax'
 call plug#end()
+
+
 
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/vimgitlog.vim
@@ -117,3 +126,37 @@ nmap <F6> :w <bar> !sudo g++ % `wx-config --cxxflags --libs` -o output.o <ENTER>
 nmap <F7> :w <bar> !g++ -o a.out % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c++17 <ENTER>
 
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
+" Colorschemes
+if has('termguicolors')
+  set termguicolors
+endif
+
+"let g:miramare_enable_italic = 1
+"let g:miramare_disable_italic_comment = 1
+"colorscheme miramare
+
+" Bluewery
+    " For dark
+    colorscheme bluewery
+    let g:lightline = { 'colorscheme': 'bluewery' }
+
+    "" For light
+    "colorscheme bluewery-light
+    "let g:lightline = { 'colorscheme': 'bluewery_light' }
+
+" Nebula
+    "Light
+    "set background=light
+    "colorscheme nebula
+
+    "Dark
+    "set background=dark
+    "colorscheme nebula
+
+" Shirotelin
+    "colorscheme shirotelin
+
+    " Show Whitespace
+    "set list
+    "set listchars=tab:»-,eol:↲,extends:»,precedes:«,space:.

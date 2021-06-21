@@ -1,0 +1,144 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/jonah/.config/mpv/scripts/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210110.0/
+0	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "loadfiles"]$/;"	s	array:0.command
+0	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "reverse"],$/;"	s	array:3.command
+0	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "save"],$/;"	s	array:5.command
+0	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "shuffle"],$/;"	s	array:4.command
+0	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "sort", "true"],$/;"	s	array:2.command
+0	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "sort"],$/;"	s	array:1.command
+0	playlistmanager/menu.json	/^  {$/;"	o
+1	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "loadfiles"]$/;"	s	array:0.command
+1	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "reverse"],$/;"	s	array:3.command
+1	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "save"],$/;"	s	array:5.command
+1	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "shuffle"],$/;"	s	array:4.command
+1	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "sort", "true"],$/;"	s	array:2.command
+1	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "sort"],$/;"	s	array:1.command
+1	playlistmanager/menu.json	/^  {$/;"	o
+2	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "loadfiles"]$/;"	s	array:0.command
+2	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "reverse"],$/;"	s	array:3.command
+2	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "save"],$/;"	s	array:5.command
+2	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "shuffle"],$/;"	s	array:4.command
+2	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "sort", "true"],$/;"	s	array:2.command
+2	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "sort"],$/;"	s	array:1.command
+2	playlistmanager/menu.json	/^  {$/;"	o
+3	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "sort", "true"],$/;"	s	array:2.command
+3	playlistmanager/menu.json	/^  {$/;"	o
+4	playlistmanager/menu.json	/^  {$/;"	o
+5	playlistmanager/menu.json	/^  {$/;"	o
+Dynamic keybindings	playlistmanager/README.md	/^#### Dynamic keybindings$/;"	t	section:Mpv-Playlistmanager""Keybinds
+Installation	playlistmanager/README.md	/^## Installation$/;"	s	chapter:Mpv-Playlistmanager
+Keybinds	playlistmanager/README.md	/^## Keybinds$/;"	s	chapter:Mpv-Playlistmanager
+Mpv-Playlistmanager	playlistmanager/README.md	/^# Mpv-Playlistmanager$/;"	c
+My other mpv scripts	playlistmanager/README.md	/^#### My other mpv scripts$/;"	t	section:Mpv-Playlistmanager""Keybinds
+Settings	playlistmanager/README.md	/^## Settings$/;"	s	chapter:Mpv-Playlistmanager
+Static keybindings	playlistmanager/README.md	/^#### Static keybindings$/;"	t	section:Mpv-Playlistmanager""Keybinds
+Url title resolving	playlistmanager/README.md	/^#### Url title resolving$/;"	t	section:Mpv-Playlistmanager""Settings
+add_keybinds	playlistmanager.lua	/^function add_keybinds()$/;"	f
+alphanumsort	playlistmanager.lua	/^function alphanumsort(a, b)$/;"	f
+alphanumsort	playlistmanager/playlistmanager.conf	/^alphanumsort=yes$/;"	k
+autosort	playlistmanager.lua	/^function autosort(name, param)$/;"	f
+bind_keys	playlistmanager.lua	/^function bind_keys(keys, name, func, opts)$/;"	f
+command	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "loadfiles"]$/;"	a	object:0
+command	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "reverse"],$/;"	a	object:3
+command	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "save"],$/;"	a	object:5
+command	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "shuffle"],$/;"	a	object:4
+command	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "sort", "true"],$/;"	a	object:2
+command	playlistmanager/menu.json	/^    "command": ["script-message", "playlistmanager", "sort"],$/;"	a	object:1
+dosort	playlistmanager.lua	/^function dosort(a,b)$/;"	f
+draw_playlist	playlistmanager.lua	/^function draw_playlist()$/;"	f
+dynamic_binds	playlistmanager/playlistmanager.conf	/^dynamic_binds=yes$/;"	k
+escapepath	playlistmanager.lua	/^function escapepath(dir, escapechar)$/;"	f
+filename_replace	playlistmanager/playlistmanager.conf	/^filename_replace=$/;"	k
+get_files_linux	playlistmanager.lua	/^function get_files_linux(dir)$/;"	f
+get_files_windows	playlistmanager.lua	/^function get_files_windows(dir)$/;"	f
+get_name_from_index	playlistmanager.lua	/^function get_name_from_index(i, notitle)$/;"	f
+get_temp_path	mpvSockets/mpvSockets.lua	/^local function get_temp_path()$/;"	f
+handlemessage	playlistmanager.lua	/^function handlemessage(msg, value, value2)$/;"	f
+hovered_file	playlistmanager/playlistmanager.conf	/^hovered_file=● %name$/;"	k
+join_paths	mpvSockets/mpvSockets.lua	/^function join_paths(...)$/;"	f
+key_closeplaylist	playlistmanager/playlistmanager.conf	/^key_closeplaylist=ESC$/;"	k
+key_movedown	playlistmanager/playlistmanager.conf	/^key_movedown=DOWN$/;"	k
+key_moveup	playlistmanager/playlistmanager.conf	/^key_moveup=UP$/;"	k
+key_playfile	playlistmanager/playlistmanager.conf	/^key_playfile=ENTER$/;"	k
+key_removefile	playlistmanager/playlistmanager.conf	/^key_removefile=BS$/;"	k
+key_selectfile	playlistmanager/playlistmanager.conf	/^key_selectfile=RIGHT LEFT$/;"	k
+key_unselectfile	playlistmanager/playlistmanager.conf	/^key_unselectfile=$/;"	k
+label	playlistmanager/menu.json	/^    "label": "Load files to playlist",$/;"	s	object:0
+label	playlistmanager/menu.json	/^    "label": "Reverse playlist",$/;"	s	object:3
+label	playlistmanager/menu.json	/^    "label": "Save playlist",$/;"	s	object:5
+label	playlistmanager/menu.json	/^    "label": "Shuffle playlist",$/;"	s	object:4
+label	playlistmanager/menu.json	/^    "label": "Sort playlist and start from first file",$/;"	s	object:2
+label	playlistmanager/menu.json	/^    "label": "Sort playlist",$/;"	s	object:1
+load	modules.lua	/^function load(relative_path) dofile(mpv_scripts_dir_path .. relative_path) end$/;"	f
+loadfiles_filetypes	playlistmanager/playlistmanager.conf	/^loadfiles_filetypes=["jpg","jpeg","png","tif","tiff","gif","webp","svg","bmp","mp3","wav","ogm",/;"	k
+loadfiles_on_start	playlistmanager/playlistmanager.conf	/^loadfiles_on_start=no$/;"	k
+loop_cursor	playlistmanager/playlistmanager.conf	/^loop_cursor=yes$/;"	k
+movedown	playlistmanager.lua	/^function movedown()$/;"	f
+moveup	playlistmanager.lua	/^function moveup()$/;"	f
+mpvSockets	mpvSockets/README.md	/^# mpvSockets$/;"	c
+normal_file	playlistmanager/playlistmanager.conf	/^normal_file=○ %name$/;"	k
+on_closed	playlistmanager.lua	/^function on_closed()$/;"	f
+on_loaded	playlistmanager.lua	/^function on_loaded()$/;"	f
+open_toggles	playlistmanager/playlistmanager.conf	/^open_toggles=yes$/;"	k
+padnum	playlistmanager.lua	/^  local function padnum(d)$/;"	f
+parse_filename	playlistmanager.lua	/^function parse_filename(string, name, index)$/;"	f
+parse_filename_by_index	playlistmanager.lua	/^function parse_filename_by_index(index)$/;"	f
+parse_files	playlistmanager.lua	/^function parse_files(res, delimiter)$/;"	f
+parse_header	playlistmanager.lua	/^function parse_header(string)$/;"	f
+parse_home	playlistmanager.lua	/^function parse_home(path)$/;"	f
+playfile	playlistmanager.lua	/^function playfile()$/;"	f
+playing_file	playlistmanager/playlistmanager.conf	/^playing_file=▷ %name$/;"	k
+playing_hovered_file	playlistmanager/playlistmanager.conf	/^playing_hovered_file=▶ %name$/;"	k
+playing_selected_file	playlistmanager/playlistmanager.conf	/^playing_selected_file=➤ %name$/;"	k
+playlist	playlistmanager.lua	/^function playlist(force_dir)$/;"	f
+playlist_display_timeout	playlistmanager/playlistmanager.conf	/^playlist_display_timeout=5$/;"	k
+playlist_header	playlistmanager/playlistmanager.conf	/^playlist_header=[%cursor\/%plen]$/;"	k
+playlist_next	playlistmanager.lua	/^function playlist_next(force_write)$/;"	f
+playlist_prev	playlistmanager.lua	/^function playlist_prev(force_write)$/;"	f
+playlist_savepath	playlistmanager/playlistmanager.conf	/^playlist_savepath=$/;"	k
+playlist_sliced_prefix	playlistmanager/playlistmanager.conf	/^playlist_sliced_prefix=...$/;"	k
+playlist_sliced_suffix	playlistmanager/playlistmanager.conf	/^playlist_sliced_suffix=...$/;"	k
+prefer_titles	playlistmanager/playlistmanager.conf	/^prefer_titles=url$/;"	k
+refresh_globals	playlistmanager.lua	/^function refresh_globals()$/;"	f
+remove_keybinds	playlistmanager.lua	/^function remove_keybinds()$/;"	f
+removefile	playlistmanager.lua	/^function removefile()$/;"	f
+resolve_titles	playlistmanager.lua	/^function resolve_titles()$/;"	f
+resolve_titles	playlistmanager/playlistmanager.conf	/^resolve_titles=no$/;"	k
+reverseplaylist	playlistmanager.lua	/^function reverseplaylist()$/;"	f
+save_playlist	playlistmanager.lua	/^function save_playlist()$/;"	f
+scale_playlist_by_window	playlistmanager/playlistmanager.conf	/^scale_playlist_by_window=yes$/;"	k
+selected_file	playlistmanager/playlistmanager.conf	/^selected_file=➔ %name$/;"	k
+selectfile	playlistmanager.lua	/^function selectfile()$/;"	f
+set_title_stripped	playlistmanager/playlistmanager.conf	/^set_title_stripped=no$/;"	k
+show_playlist_on_fileload	playlistmanager/playlistmanager.conf	/^show_playlist_on_fileload=0$/;"	k
+showamount	playlistmanager/playlistmanager.conf	/^showamount=16$/;"	k
+showplaylist	playlistmanager.lua	/^function showplaylist(duration)$/;"	f
+shuffleplaylist	playlistmanager.lua	/^function shuffleplaylist()$/;"	f
+shutdown_handler	mpvSockets/mpvSockets.lua	/^function shutdown_handler()$/;"	f
+slice_longfilenames	playlistmanager/playlistmanager.conf	/^slice_longfilenames=no$/;"	k
+slice_longfilenames_amount	playlistmanager/playlistmanager.conf	/^slice_longfilenames_amount=70$/;"	k
+sortplaylist	playlistmanager.lua	/^function sortplaylist(startover)$/;"	f
+sortplaylist_on_file_add	playlistmanager/playlistmanager.conf	/^sortplaylist_on_file_add=no$/;"	k
+sortplaylist_on_start	playlistmanager/playlistmanager.conf	/^sortplaylist_on_start=no$/;"	k
+stripfilename	playlistmanager.lua	/^function stripfilename(pathfile, media_title)$/;"	f
+style_ass_tags	playlistmanager/playlistmanager.conf	/^style_ass_tags=$/;"	k
+sync_cursor_on_load	playlistmanager/playlistmanager.conf	/^sync_cursor_on_load=yes$/;"	k
+system	playlistmanager/playlistmanager.conf	/^system=auto$/;"	k
+text_padding_x	playlistmanager/playlistmanager.conf	/^text_padding_x=10$/;"	k
+text_padding_y	playlistmanager/playlistmanager.conf	/^text_padding_y=30$/;"	k
+title_prefix	playlistmanager/playlistmanager.conf	/^title_prefix=$/;"	k
+title_suffix	playlistmanager/playlistmanager.conf	/^title_suffix= - mpv$/;"	k
+toggle_playlist	playlistmanager.lua	/^function toggle_playlist()$/;"	f
+unbind_keys	playlistmanager.lua	/^function unbind_keys(keys, name)$/;"	f
+unselectfile	playlistmanager.lua	/^function unselectfile()$/;"	f
+update_opts	playlistmanager.lua	/^function update_opts(changelog)$/;"	f
+write_watch_later	playlistmanager.lua	/^function write_watch_later(force_write)$/;"	f

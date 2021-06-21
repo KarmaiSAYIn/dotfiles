@@ -1,0 +1,7 @@
+clangd.switchSourceHeader
+clangd.symbolInfo
+clangd.install
+workspace.diffDocument
+python.goToPythonObject
+workspace.showOutput
+clangd.update
