@@ -1,0 +1,50 @@
+#!/bin/sh 
+alias off="sudo shutdown -h now"
+alias res="sudo shutdown -r now"
+alias li="ls -lhAF"
+alias cl="clear ; ls"
+
+alias obs="dir='$(pwd)' ; cd /usr/bin/obs-studio-portable/bin/64bit/ ; ./obs ; cd $dir"
+alias gdb="cgdb"
+alias minecraft="LC_ALL=C minecraft-launcher"
+alias info="info --vi-keys"
+alias arduino="arduino-cli"
+alias xclip="xclip -selection c" # use xclip to paste to the clipboard instead of whatever magic box it uses by default.
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	g="git" \
+	trem="transmission-remote" \
+	YT="youtube-viewer" \
+	sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="sudo pacman" \
+	xi="sudo xbps-install" \
+	xr="sudo xbps-remove -R" \
+	xq="xbps-query" \
+	z="zathura"
+
+alias \
+	magit="nvim -c MagitOnly" \
+	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
+	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
