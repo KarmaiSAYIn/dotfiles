@@ -80,12 +80,13 @@ set nowrap
 
 set textwidth=0
 set formatoptions-=jcroql
-set formatoptions=jtq
+set formatoptions=jq
 
 source $HOME/.config/nvim/mom.vim
 let g:lf_replace_netrw = 1
 
 nmap <leader>r :RnvimrToggle<CR>
+nmap <leader>j gqip
 
 hi SpellBad ctermfg=black ctermbg=white
 hi DiffChange ctermbg=black
@@ -128,9 +129,9 @@ nmap <F7> :w <bar> !g++ -o a.out % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c+
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Colorschemes
-if has('termguicolors')
-  set termguicolors
-endif
+"if has('termguicolors')
+  "set termguicolors
+"endif
 
 "let g:miramare_enable_italic = 1
 "let g:miramare_disable_italic_comment = 1
@@ -138,8 +139,8 @@ endif
 
 " Bluewery
     " For dark
-    colorscheme bluewery
-    let g:lightline = { 'colorscheme': 'bluewery' }
+    "colorscheme bluewery
+    "let g:lightline = { 'colorscheme': 'bluewery' }
 
     "" For light
     "colorscheme bluewery-light
