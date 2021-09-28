@@ -84,26 +84,16 @@ set textwidth=80
 source $HOME/.config/nvim/mom.vim
 let g:lf_replace_netrw = 1
 
+set formatoptions=jq
 let g:pencil#textwidth = 80
-let g:pencil#wrapModeDefault = 'hard'   " default is 'hard'
+let g:pencil#wrapModeDefault = 'hard'
 
 set nocompatible
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init()
   autocmd FileType text         call pencil#init()
-augroup END
-
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init({'wrap': 'hard'})
-augroup END
-
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init({'wrap': 'hard'})
+  autocmd FileType tex         call pencil#init()
 augroup END
 
 hi SpellBad ctermfg=black ctermbg=white
@@ -135,6 +125,7 @@ nmap <C-c> :close<ENTER>
 
 nmap L zL
 nmap H zH
+nmap K :TogglePencil<ENTER>
 nmap <silent> gh :CocCommand clangd.switchSourceHeader<ENTER>
 nmap <F1> :w !python3 % <ENTER>
 nmap <F2> :w <bar> !pdflatex % <ENTER>
@@ -145,8 +136,6 @@ nmap <F6> :w <bar> !sudo g++ % `wx-config --cxxflags --libs` -o output.o <ENTER>
 nmap <F7> :w <bar> !g++ -o a.out % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c++17 <ENTER>
 
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
-
-set formatoptions=jq
 
 " Colorschemes
 "if has('termguicolors')
