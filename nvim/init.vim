@@ -20,6 +20,7 @@ Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'preservim/nerdcommenter'
+Plug 'reedes/vim-pencil'
 
 " Colorschemes
 Plug 'franbach/miramare'
@@ -78,15 +79,32 @@ set updatetime=10
 set timeoutlen=500
 set nowrap
 
-set textwidth=0
-set formatoptions-=jcroql
-set formatoptions=jq
+set textwidth=80
 
 source $HOME/.config/nvim/mom.vim
 let g:lf_replace_netrw = 1
 
-nmap <leader>r :RnvimrToggle<CR>
-nmap <leader>j gqip
+let g:pencil#textwidth = 80
+let g:pencil#wrapModeDefault = 'hard'   " default is 'hard'
+
+set nocompatible
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init({'wrap': 'hard'})
+augroup END
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init({'wrap': 'hard'})
+augroup END
 
 hi SpellBad ctermfg=black ctermbg=white
 hi DiffChange ctermbg=black
@@ -127,6 +145,8 @@ nmap <F6> :w <bar> !sudo g++ % `wx-config --cxxflags --libs` -o output.o <ENTER>
 nmap <F7> :w <bar> !g++ -o a.out % -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c++17 <ENTER>
 
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
+set formatoptions=jq
 
 " Colorschemes
 "if has('termguicolors')
